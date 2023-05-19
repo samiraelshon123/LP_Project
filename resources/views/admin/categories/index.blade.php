@@ -39,7 +39,6 @@
         <table class="table table-bordered">
           <thead>
             <tr>
-
               <th>Name</th>
               <th>Slug</th>
               <th>Icon</th>
@@ -47,23 +46,20 @@
               <th>Mobile Icon</th>
               <th>Category</th>
               <th>Image</th>
-              <th>Action</th>
-              
+              <th>Action</th> 
             </tr>
           </thead>
           <tbody>
             <tr>
                 @foreach ($categories as $category)
                 <tr>
-
                     <td>{{ $category->name }}</td>
                     <td>{{ $category->slug }}</td>
                     <td>{{ $category->icon }}</td>
-                    <td>{{ ($category->status ==0)? 'Active':  'InActive'  }}</td>
+                    <td>{{ ($category->status == 0)? 'Active':  'InActive'  }}</td>
                     <td>{{ $category->mobile_icon }}</td>
                     <td>{{ ($category->sub_category != null)? $category->sub_category : 'No Category'  }}</td>
                     <td><img src= "{{ $category->image_for_web }}" style="width: 120px; height: 120px;" class="w-50p"/></td>
-
                     <td style="display: flex;border-bottom: none;">
                         <a class="mr-4" href="{{route('category.edit', $category->id)}}">
                             <i class="fas fa-edit"></i>
@@ -76,11 +72,8 @@
                         </button>
                         </form>
                     </td>
-                  
-
                 </tr>
                 @endforeach
-
             </tr>
           </tbody>
         </table>
