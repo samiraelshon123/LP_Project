@@ -1,0 +1,77 @@
+.about-city .right-section h1 {
+  font-size: 46px;
+  color: #333333;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.about-city .right-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.about-city .right-section span.table-cap {
+  font-size: 14px;
+  font-weight: 700;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+}
+table thead th span {
+  font-size: 10px;
+  font-weight: 400;
+}
+table tbody tr {
+  font-size: 16px;
+  color: #f6a623;
+  text-align: center;
+  font-weight: 700;
+}
+.img-container .img {
+  height: 310px;
+}
+.img-container .img img {
+  height: 100%;
+  width: 100%;
+}
+.gallery-small-img .img {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 8px;
+  height: 70px;
+  width: 100%;
+  opacity: 0.6;
+  transition: 0.2s ease;
+}
+.gallery-small-img .img:hover {
+  opacity: 1;
+}
+.gallery-small-img .img img {
+  height: 100%;
+  width: 100%;
+}
+#owl-carousel3 {
+  height: 400x;
+}
+#owl-carousel3 .card,
+#owl-carousel3 .card .img img {
+  height: 100%;
+}
+#owl-carousel3 .card .img {
+  height: 50%;
+}
+#owl-carousel3 .card .card-title {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#owl-carousel3 .card .card-text {
+  font-size: 14px;
+  color: #333333;
+}
+#owl-carousel3 .card a.btn {
+  background-color: #a2a2a2;
+  color: #fff;
+  padding: 6px 40px;
+  font-weight: 700;
+}

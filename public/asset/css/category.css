@@ -1,0 +1,48 @@
+.cate-description h3 {
+  font-size: 16px;
+  width: 140px;
+  color: #333333;
+}
+.cate-description h3 i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  height: 21px;
+  width: 21px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+}
+.cate-description h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.cate-items .card {
+  height: 430px;
+}
+.cate-items .card h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+.cate-items .card i {
+  color: #336291;
+}
+.cate-items .card .card-top-title {
+  height: 70%;
+  padding-bottom: 15px;
+}
+.cate-items .card .card-text {
+  font-size: 14px;
+}
+.cate-items .card .btn {
+  border: 3px solid #333333;
+  border-radius: 0;
+}
+.cate-items .card .btn:hover {
+  color: #fff;
+  background-color: #333333;
+}

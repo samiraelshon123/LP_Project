@@ -1,0 +1,30 @@
+.contact .header h1 {
+  color: #333333;
+  font-weight: 700;
+}
+.contact .header p {
+  color: #333333;
+  font-size: 14px;
+}
+.contact form,
+.contact form select {
+  font-size: 14px;
+}
+.contact form label {
+  font-weight: 700;
+}
+.contact form button {
+  border: 0;
+  background-color: #a2a2a2;
+  padding: 8px 30px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+}
+.contact .map .info h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.contact .map .info p {
+  font-size: 14px;
+}

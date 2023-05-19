@@ -1,0 +1,85 @@
+@extends('layouts.admin')
+@section('content')
+  <div class="content-wrapper" style="margin-left: 0px;">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Blog Table</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="{{route('admin')}}">Home</a></li>
+              <li class="breadcrumb-item active">Blog Table</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+    @if(session('add_message'))
+           <h1 style="color: rgb(73, 208, 73); font-size: 20px">{{session('add_message')}}</h1>
+        @endif
+        @if(session('delete_message'))
+           <h1 style="color: red; font-size: 20px">{{session('delete_message')}}</h1>
+        @endif
+        @if(session('edit_message'))
+           <h1 style="color: rgb(73, 208, 73); font-size: 20px">{{session('edit_message')}}</h1>
+        @endif
+      <div class="container-fluid">
+        
+    <div class="card" style="width: 1230px;">
+
+      <!-- /.card-header -->
+      <div class="card-body" >
+        <div class="card-footer">
+          <a href="{{route('blog.create')}}" class="btn btn-primary">Add Blog</a>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+
+              <th>Title</th>
+              <th>Status</th>
+              <th>Image</th>
+              <th>Action</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                @foreach ($blogs as $blog)
+                <tr>
+
+                    <td>{{ $blog->title }}</td>
+                    <td>{{$blog->status}}</td>
+
+                    <td><img src= "{{ $blog->image_for_web }}" style="width: 120px; height: 120px;" class="w-50p"/></td>
+                    <td style="display: flex;border-bottom: none;">
+                        <a class="mr-4" href="{{route('blog.edit', $blog->id)}}">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <form action="{{route('blog.destroy', $blog->id)}}" method="post">
+                          @method('delete')
+                          @csrf
+                        <button type="submit" style="border: none;color: red;background: white;">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                        </form>
+                    </td>
+                  
+
+                </tr>
+                @endforeach
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>    
+    </section>
+  </div>
+ 
+  @endsection

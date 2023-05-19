@@ -1,0 +1,15 @@
+.main-img {
+  height: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#owl-carousel4 {
+  height: 300px;
+}
+
+.places .place .img-wraper {
+  height: 330px;
+}
+.places .place .img-wraper img {
+  height: 100%;
+}

@@ -1,0 +1,30 @@
+.form {
+  width: 400px;
+  padding: 60px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 5;
+}
+body {
+  background-image: url("../imgs/mo-gabrail-iuC3w8mLDcs-unsplash.jpg");
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000006b;
+}
+.form .btn {
+  background-color: #a5562a;
+  border: #a5562a;
+  color: #fff;
+}
+.register {
+  width: 500px;
+  padding: 40px;
+}
+.form a {
+  text-decoration: underline;
+}
