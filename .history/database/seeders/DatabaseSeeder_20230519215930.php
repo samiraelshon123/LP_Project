@@ -23,14 +23,14 @@ class DatabaseSeeder extends Seeder
         // Contact::create([
         //     'email' => 'demo@gmail.com',
         //    ]);
-        // Admin::create([
-        //     'name' => 'admin',
-        //     'username' => 'admin',
-        //     'email' => 'admin@admin.com',
-        //     'password' => Hash::make(123456789),
+        Admin::create([
+            'name' => 'admin',
+            'username' => 'admin',
+            'email' => 'admin@admin.com',
+            'password' => Hash::make(123456789),
             
 
-        // ]);
+        ]);
         
         
     }

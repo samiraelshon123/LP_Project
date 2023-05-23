@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\BrandController;
 use App\Http\Controllers\admin\BlogController;
-use App\Http\Controllers\admin\CityController;
 use App\Http\Controllers\admin\SocialMediaController;
 use App\Http\Controllers\auth\RegisterController;
 use App\Http\Controllers\auth\LoginController;
@@ -37,7 +36,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth:admin']], function() {
     // brand
     Route::resource('category', CategoryController::class);
 
-    Route::resource('city', CityController::class);
+    Route::resource('city', CityyController::class);
 
     
     // governorate
