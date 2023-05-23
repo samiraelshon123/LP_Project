@@ -64,15 +64,6 @@
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
-              </li><br>
-              <li class="nav-item menu-open">
-                <a href="{{route('Page.index')}}" class="nav-link active">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
-                  Pages
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
               </li>
               <br>
              

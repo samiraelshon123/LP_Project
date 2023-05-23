@@ -6,7 +6,6 @@ use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\BrandController;
 use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\CityController;
-use App\Http\Controllers\admin\PageController;
 use App\Http\Controllers\admin\SocialMediaController;
 use App\Http\Controllers\auth\RegisterController;
 use App\Http\Controllers\auth\LoginController;

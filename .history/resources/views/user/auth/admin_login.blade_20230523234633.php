@@ -25,12 +25,12 @@
             <div class="bg_parallax image_02_parallax"></div>
             <div class="opacy_bg_02">
                 <div class="container">
-                    <h1>Admin Login</h1>
+                    <h1>Login</h1>
                     <div class="crumbs">
                         <ul>
                             <li><a href="index.php.html">Home</a></li>
                             <li>/</li>
-                            <li>Admin Login</li>
+                            <li>Login</li>
                         </ul>
                     </div>
                 </div>
