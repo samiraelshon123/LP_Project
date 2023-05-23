@@ -25,7 +25,7 @@ class CityController extends Controller
     }
     public function store(Request $request)
     {
-       
+        dd($request->status);
 
         $data = $request->validate([
             'name' => 'required|string|min:3',
@@ -43,7 +43,7 @@ class CityController extends Controller
     public function edit($id){
       
         $city = City::find($id);
-       
+        
         return view('admin.cities.edit', compact('city'));
     }
     public function update(Request $request, $id){

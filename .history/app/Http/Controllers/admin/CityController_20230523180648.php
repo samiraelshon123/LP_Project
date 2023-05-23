@@ -43,7 +43,7 @@ class CityController extends Controller
     public function edit($id){
       
         $city = City::find($id);
-       
+        dd
         return view('admin.cities.edit', compact('city'));
     }
     public function update(Request $request, $id){
